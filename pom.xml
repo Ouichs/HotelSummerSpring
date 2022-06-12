@@ -18,38 +18,46 @@
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
+		<!-- Créer tables/entités/... -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<!-- Créer automatiquement des APIs REST en fonction de Data JPA -->
 		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency> -->
+		<!-- Gérer la connexion à l'application et la génération de tokens -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+		<!-- Valider des attributs d'une Entity (ex: notNull, min/max, email, ...) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
+		<!-- Gérer le serveur Tomcat inclus -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- Apporter des outils comme LiveReload -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+		<!-- Connecter l'application à un serveur MySql -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<!-- Ajouter des annotations pour générer les constructeurs/getters/setters/... -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -81,10 +89,11 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<!-- Enlever l'erreur sur <parent> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.1.0</version><!--$NO-MVN-MAN-VER$-->
+				<version>3.1.0</version>				<!--$NO-MVN-MAN-VER$-->
 			</plugin>
 		</plugins>
 	</build>
