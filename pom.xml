@@ -24,15 +24,15 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<!-- Créer automatiquement des APIs REST en fonction de Data JPA -->
-		<!-- <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-rest</artifactId>
-		</dependency> -->
-		<!-- Gérer la connexion à l'application et la génération de tokens -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
+		<!-- Gérer la connexion à l'application et la génération de tokens -->
+		<!-- <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency> -->
 		<!-- Valider des attributs d'une Entity (ex: notNull, min/max, email, ...) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
