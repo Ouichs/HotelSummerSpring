@@ -25,16 +25,6 @@
 		</dependency>
 		<!-- Créer automatiquement des APIs REST en fonction de Data JPA -->
 		<dependency>
-<<<<<<< Updated upstream
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-rest</artifactId>
-		</dependency>
-		<!-- Gérer la connexion à l'application et la génération de tokens -->
-		<!-- <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency> -->
-=======
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
@@ -43,7 +33,6 @@
 <!-- 			<groupId>org.springframework.boot</groupId> -->
 <!-- 			<artifactId>spring-boot-starter-security</artifactId> -->
 <!-- 		</dependency> -->
->>>>>>> Stashed changes
 		<!-- Valider des attributs d'une Entity (ex: notNull, min/max, email, ...) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
