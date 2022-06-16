@@ -19,3 +19,5 @@ buildNumber.properties
 src/main/resources/application.properties
 
 .vscode/settings.json
+
+.metadata/
