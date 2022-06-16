@@ -107,7 +107,7 @@ public class AuthController {
                         roles.add(adminRole);
 
                         break;
-                    case "mod":
+                    case "dir":
                         RoleRest dirRole = roleRepository.findByName(RoleRestNames.ROLE_DIRECTOR)
                                 .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
                         roles.add(dirRole);

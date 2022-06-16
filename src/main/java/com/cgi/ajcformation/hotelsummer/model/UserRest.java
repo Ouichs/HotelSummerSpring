@@ -37,7 +37,7 @@ public class UserRest {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private int id;
 
     @NotBlank
     @Size(max = 50)
