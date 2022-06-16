@@ -29,10 +29,10 @@
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
 		<!-- Gérer la connexion à l'application et la génération de tokens -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.springframework.boot</groupId> -->
-<!-- 			<artifactId>spring-boot-starter-security</artifactId> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 		<!-- Valider des attributs d'une Entity (ex: notNull, min/max, email, ...) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -42,6 +42,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
 		</dependency>
 
 		<!-- Apporter des outils comme LiveReload -->

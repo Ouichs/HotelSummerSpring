@@ -6,8 +6,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Version;
 
-import com.mysql.cj.jdbc.Blob;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,8 +23,8 @@ public class Adress {
 	private int number;
 	private String city;
 	private String cp;
-	private String contactInformation;
-	
+	// private String contactInformation;
+
 	@Version
     private int version;
 
