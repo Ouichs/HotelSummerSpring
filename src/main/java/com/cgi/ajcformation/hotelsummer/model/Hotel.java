@@ -3,17 +3,13 @@ package com.cgi.ajcformation.hotelsummer.model;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Version;
-import javax.persistence.JoinColumn;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -29,14 +25,14 @@ public class Hotel {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
-	
+
    @OneToMany
    private Collection<BedRoom> bedrooms = new ArrayList<>();
-   
+
    @OneToOne
    private Adress adress;
-   
- 
+
+
 
 	private String name;
 	private String description;
@@ -52,6 +48,6 @@ public class Hotel {
 	@Version
 	private int version;
 
-	
+
 
 }
