@@ -21,7 +21,7 @@ import lombok.Getter;
 public class UserDetailsImpl implements UserDetails {
     private static final long serialVersionUID = 1L;
 
-    private Long id;
+    private int id;
 
     private String username;
 
