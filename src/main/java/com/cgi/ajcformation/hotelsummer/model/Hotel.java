@@ -22,12 +22,12 @@ import lombok.NoArgsConstructor;
 public class Hotel {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
 
    @OneToMany
-   private Collection<BedRoom> bedrooms = new ArrayList<>();
+   private Collection<Bedroom> bedrooms = new ArrayList<>();
 
    @OneToOne
    private Adress adress;

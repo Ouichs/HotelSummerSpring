@@ -4,10 +4,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-import com.cgi.ajcformation.hotelsummer.model.BedRoom;
+import com.cgi.ajcformation.hotelsummer.model.Bedroom;
 
 @CrossOrigin
 @RepositoryRestResource(collectionResourceRel = "bedroom", path = "bedroom")
-public interface BedRoomRepository extends JpaRepository<BedRoom, Integer> {
+public interface BedRoomRepository extends JpaRepository<Bedroom, Integer> {
 //findbyidandhotelid
 }
