@@ -18,7 +18,7 @@ import com.cgi.ajcformation.hotelsummer.security.jwt.AuthEntryPointJwt;
 import com.cgi.ajcformation.hotelsummer.security.jwt.AuthTokenFilter;
 import com.cgi.ajcformation.hotelsummer.security.service.UserDetailsServiceImpl;
 
-
+@SuppressWarnings("deprecation")
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(
